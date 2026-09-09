@@ -9,11 +9,11 @@ package com.mycompany.gudanginternet;
  * @author ASUS
  */
 import java.util.ArrayList;
-public class BarangService {
+public class ComtelindoService {
     private ArrayList<Barang> daftarBarang;
     private int nextId;
 
-    public BarangService() {
+    public ComtelindoService() {
         this.daftarBarang = new ArrayList<>();
         this.nextId = 1;
     }
