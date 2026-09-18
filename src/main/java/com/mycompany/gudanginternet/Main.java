@@ -10,21 +10,24 @@ package com.mycompany.gudanginternet;
  */
 
 import java.util.Scanner;
-public class ComtelindoMain {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ComtelindoService service = new ComtelindoService();
+        BarangService service = new BarangService();
 
-        // Data awal contoh
-        service.tambahBarang("Modem ZTE F609", "Perangkat Jaringan", 350000, 25);
-        service.tambahBarang("Kabel Fiber Optik Dropcore 100m", "Kabel", 750000, 15);
-        service.tambahBarang("Router Mikrotik RB750", "Perangkat Jaringan", 620000, 10);
+        // ===== DUMMY DATA AWAL (wajib minimal 1, di sini 5 data) =====
+        // memanfaatkan overloading tambahBarang() dan inheritance/polymorphism
+        service.tambahBarang("Kabel UTP Cat 6", "Kabel", 5000, 200, 100.0, "UTP Cat 6");
+        service.tambahBarang("Modem ZTE F609", "Perangkat Jaringan", 350000, 25, "ZTE", 12);
+        service.tambahBarang("Router Mikrotik RB750", "Perangkat Jaringan", 620000, 10, "Mikrotik", 24);
+        service.tambahBarang("Kabel Fiber Optik Dropcore", "Kabel", 750000, 15, 100.0, "Fiber Optik");
+        service.tambahBarang("Konektor RJ45", "Aksesoris", 1500, 500);
 
         boolean running = true;
 
         while (running) {
             tampilkanMenu();
-            int pilihan = ComtelindoValidator.inputPilihanMenu(sc, "Pilih menu (1-6): ", 1, 6);
+            int pilihan = Validator.inputPilihanMenu(sc, "Pilih menu (1-6): ", 1, 6);
 
             switch (pilihan) {
                 case 1:
@@ -69,44 +72,65 @@ public class ComtelindoMain {
         System.out.println("===========================================");
     }
 
-    private static void tambahBarang(Scanner sc, ComtelindoService service) {
+    private static void tambahBarang(Scanner sc, BarangService service) {
         System.out.println("\n=== TAMBAH BARANG GUDANG ===");
-        String nama = ComtelindoValidator.inputString(sc, "Nama barang: ");
-        String kategori = ComtelindoValidator.inputString(sc, "Kategori: ");
-        double harga = ComtelindoValidator.inputDoubleMin(sc, "Harga (Rp): ", 0);
-        int stok = ComtelindoValidator.inputIntMin(sc, "Stok: ", 0);
+        System.out.println("Jenis barang:");
+        System.out.println("1. Barang Biasa");
+        System.out.println("2. Perangkat Jaringan (punya merek & garansi)");
+        System.out.println("3. Kabel Jaringan (punya panjang & jenis kabel)");
+        int jenis = Validator.inputPilihanMenu(sc, "Pilih jenis (1-3): ", 1, 3);
 
-        Barang barangBaru = service.tambahBarang(nama, kategori, harga, stok);
+        String nama = Validator.inputString(sc, "Nama barang: ");
+        String kategori = Validator.inputString(sc, "Kategori: ");
+        double harga = Validator.inputDoubleMin(sc, "Harga (Rp): ", 0);
+        int stok = Validator.inputIntMin(sc, "Stok: ", 0);
+
+        Barang barangBaru;
+        switch (jenis) {
+            case 2:
+                String merek = Validator.inputString(sc, "Merek: ");
+                int garansi = Validator.inputIntMin(sc, "Garansi (bulan): ", 0);
+                barangBaru = service.tambahBarang(nama, kategori, harga, stok, merek, garansi);
+                break;
+            case 3:
+                double panjang = Validator.inputDoubleMin(sc, "Panjang (meter): ", 0.1);
+                String jenisKabel = Validator.inputString(sc, "Jenis kabel: ");
+                barangBaru = service.tambahBarang(nama, kategori, harga, stok, panjang, jenisKabel);
+                break;
+            default:
+                barangBaru = service.tambahBarang(nama, kategori, harga, stok);
+        }
         System.out.println("Barang berhasil ditambahkan dengan ID: " + barangBaru.getId());
     }
 
-    private static void cariBarang(Scanner sc, ComtelindoService service) {
+    private static void cariBarang(Scanner sc, BarangService service) {
         System.out.println("\n=== CARI BARANG ===");
-        int id = ComtelindoValidator.inputIntMin(sc, "Masukkan ID barang: ", 1);
+        int id = Validator.inputIntMin(sc, "Masukkan ID barang: ", 1);
         Barang barang = service.cariBarangById(id);
         if (barang == null) {
             System.out.println("Barang dengan ID " + id + " tidak ditemukan.");
         } else {
             System.out.println("Barang ditemukan:");
-            System.out.println(barang);
+            barang.tampilkanInfo();
         }
     }
 
-    private static void updateBarang(Scanner sc, ComtelindoService service) {
+    private static void updateBarang(Scanner sc, BarangService service) {
         System.out.println("\n=== UPDATE BARANG ===");
         service.tampilkanSemuaBarang();
-        int id = ComtelindoValidator.inputIntMin(sc, "Masukkan ID barang yang ingin diupdate: ", 1);
+        int id = Validator.inputIntMin(sc, "Masukkan ID barang yang ingin diupdate: ", 1);
         Barang barang = service.cariBarangById(id);
         if (barang == null) {
             System.out.println("Barang dengan ID " + id + " tidak ditemukan.");
             return;
         }
 
-        System.out.println("Data saat ini: " + barang);
-        String nama = ComtelindoValidator.inputString(sc, "Nama barang baru: ");
-        String kategori = ComtelindoValidator.inputString(sc, "Kategori baru: ");
-        double harga = ComtelindoValidator.inputDoubleMin(sc, "Harga baru (Rp): ", 0);
-        int stok = ComtelindoValidator.inputIntMin(sc, "Stok baru: ", 0);
+        System.out.println("Data saat ini:");
+        barang.tampilkanInfo();
+        String nama = Validator.inputString(sc, "Nama barang baru: ");
+        String kategori = Validator.inputString(sc, "Kategori baru: ");
+        double harga = Validator.inputDoubleMin(sc, "Harga baru (Rp): ", 0);
+        int stok = Validator.inputIntMin(sc, "Stok baru: ", 0);
 
         boolean berhasil = service.updateBarang(id, nama, kategori, harga, stok);
         if (berhasil) {
@@ -116,10 +140,10 @@ public class ComtelindoMain {
         }
     }
 
-    private static void hapusBarang(Scanner sc, ComtelindoService service) {
+    private static void hapusBarang(Scanner sc, BarangService service) {
         System.out.println("\n=== HAPUS BARANG ===");
         service.tampilkanSemuaBarang();
-        int id = ComtelindoValidator.inputIntMin(sc, "Masukkan ID barang yang ingin dihapus: ", 1);
+        int id = Validator.inputIntMin(sc, "Masukkan ID barang yang ingin dihapus: ", 1);
         Barang barang = service.cariBarangById(id);
         if (barang == null) {
             System.out.println("Barang dengan ID " + id + " tidak ditemukan.");

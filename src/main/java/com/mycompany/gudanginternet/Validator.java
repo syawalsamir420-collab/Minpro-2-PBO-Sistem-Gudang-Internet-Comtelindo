@@ -9,9 +9,9 @@ package com.mycompany.gudanginternet;
  * @author ASUS
  */
 import java.util.Scanner;
-public class ComtelindoValidator {
+public class Validator {
 
-    private ComtelindoValidator() {
+    private Validator() {
     }
 
     public static int inputInt(Scanner sc, String prompt) {

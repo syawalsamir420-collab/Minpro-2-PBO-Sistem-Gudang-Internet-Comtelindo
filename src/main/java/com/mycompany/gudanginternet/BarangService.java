@@ -9,13 +9,16 @@ package com.mycompany.gudanginternet;
  * @author ASUS
  */
 import java.util.ArrayList;
-public class ComtelindoService {
+public class BarangService {
     private ArrayList<Barang> daftarBarang;
     private int nextId;
 
-    public ComtelindoService() {
+    public BarangService() {
         this.daftarBarang = new ArrayList<>();
         this.nextId = 1;
+    }
+    int ambilIdBerikutnya() {
+        return nextId;
     }
     public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok) {
         Barang barangBaru = new Barang(nextId, namaBarang, kategori, harga, stok);
@@ -23,19 +26,33 @@ public class ComtelindoService {
         nextId++;
         return barangBaru;
     }
+    public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
+            String merek, int garansiBulan) {
+        Barang barangBaru = new PerangkatJaringan(nextId, namaBarang, kategori, harga, stok, merek, garansiBulan);
+        daftarBarang.add(barangBaru);
+        nextId++;
+        return barangBaru;
+    }
+    public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
+            double panjangMeter, String jenisKabel) {
+        Barang barangBaru = new KabelJaringan(nextId, namaBarang, kategori, harga, stok, panjangMeter, jenisKabel);
+        daftarBarang.add(barangBaru);
+        nextId++;
+        return barangBaru;
+    }
+
     public void tampilkanSemuaBarang() {
         if (daftarBarang.isEmpty()) {
             System.out.println("Belum ada data barang di gudang.");
             return;
         }
         System.out.println("=====================================================================");
-        System.out.printf("%-4s %-32s %-15s %-17s %-6s%n", "ID", "Nama Barang", "Kategori", "Harga", "Stok");
-        System.out.println("=====================================================================");
         for (Barang b : daftarBarang) {
-            System.out.println(b);
+            b.tampilkanInfo();
+            System.out.println("---------------------------------------------------------------------");
         }
-        System.out.println("=====================================================================");
     }
+
     public Barang cariBarangById(int id) {
         for (Barang b : daftarBarang) {
             if (b.getId() == id) {
@@ -44,6 +61,7 @@ public class ComtelindoService {
         }
         return null;
     }
+
     public boolean updateBarang(int id, String namaBarang, String kategori, double harga, int stok) {
         Barang barang = cariBarangById(id);
         if (barang == null) {
@@ -55,6 +73,7 @@ public class ComtelindoService {
         barang.setStok(stok);
         return true;
     }
+
     public boolean hapusBarang(int id) {
         Barang barang = cariBarangById(id);
         if (barang == null) {

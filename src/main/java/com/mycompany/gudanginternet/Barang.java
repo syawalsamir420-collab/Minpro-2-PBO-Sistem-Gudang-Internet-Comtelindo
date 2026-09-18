@@ -9,11 +9,11 @@ package com.mycompany.gudanginternet;
  * @author ASUS
  */
 public class Barang {
-    private int id;
-    private String namaBarang;
-    private String kategori;
-    private double harga;
-    private int stok;
+    protected int id;
+    protected String namaBarang;
+    protected String kategori;
+    protected double harga;
+    protected int stok;
 
     public Barang(int id, String namaBarang, String kategori, double harga, int stok) {
         this.id = id;
@@ -69,10 +69,17 @@ public class Barang {
         }
         this.stok = stok;
     }
+    public void tampilkanInfo() {
+        System.out.println("ID Barang   : " + id);
+        System.out.println("Nama Barang : " + namaBarang);
+        System.out.println("Kategori    : " + kategori);
+        System.out.println("Harga       : Rp" + String.format("%,.0f", harga));
+        System.out.println("Stok        : " + stok);
+    }
 
     @Override
     public String toString() {
-        return String.format("%-4d %-32s %-15s Rp%-15.0f %-6d",
+        return String.format("%-4d %-28s %-15s Rp%-13.0f %-6d",
                 id, namaBarang, kategori, harga, stok);
     }
 }

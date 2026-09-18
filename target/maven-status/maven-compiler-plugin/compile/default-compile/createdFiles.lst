@@ -1,4 +1,6 @@
-com\mycompany\gudanginternet\ComtelindoService.class
+com\mycompany\gudanginternet\BarangService.class
 com\mycompany\gudanginternet\Barang.class
-com\mycompany\gudanginternet\ComtelindoValidator.class
-com\mycompany\gudanginternet\ComtelindoMain.class
+com\mycompany\gudanginternet\Validator.class
+com\mycompany\gudanginternet\KabelJaringan.class
+com\mycompany\gudanginternet\Main.class
+com\mycompany\gudanginternet\PerangkatJaringan.class
