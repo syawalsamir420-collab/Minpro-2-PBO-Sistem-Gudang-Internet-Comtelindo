@@ -60,7 +60,8 @@ Sistem Gudang Internet Comtelindo adalah aplikasi command-line interface (CLI) s
 
 <img width="510" height="285" alt="Cuplikan layar 2026-09-23 180721" src="https://github.com/user-attachments/assets/6d61cb86-d863-42ad-b3fb-5a84ed91bdb7" />
 
-</h3>B.Menampilkan Menu Tambah Barang</h3>
+  
+  </h3>B.Menampilkan Menu Tambah Barang</h3>
 
 
 
