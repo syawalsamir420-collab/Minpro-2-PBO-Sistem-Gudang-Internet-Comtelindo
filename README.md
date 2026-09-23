@@ -96,6 +96,10 @@ Kabel Jaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class 
 
 yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada method tambahBarang() di class BarangService, yang ditulis tiga kali dengan nama yang sama namun jumlah dan tipe parameter yang berbeda. Java secara otomatis akan memilih versi method mana yang dijalankan berdasarkan data yang dikirim jika hanya diberikan data dasar (nama, kategori, harga, stok), maka akan dibuat objek Barang biasa; namun jika disertakan merek dan garansiBulan, method akan otomatis membuat objek PerangkatJaringan, begitu juga jika disertakan panjangMeter dan jenisKabel, maka yang dibuat adalah KabelJaringan. Dengan begitu, satu nama method dapat memiliki beberapa perilaku berbeda tergantung konteks pemanggilannya.
 
+<h3>Method Overloading</h3> 
+
+- Dibawah Ini ialah kodenya Di Class Barang service
+
 <p align="center">
 <img width="1040" height="25" alt="image" src="https://github.com/user-attachments/assets/0ea479ab-d8b8-40ea-9897-52d7f0a56326" />
 </p>
@@ -107,19 +111,6 @@ yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada met
 <p align="center">
 <img width="1022" height="47" alt="image" src="https://github.com/user-attachments/assets/7ba289e7-fff6-4238-bb70-65cce7706b6e" />
 </p>
-
-<h3>Method Overloading</h3> 
-
-- Dibawah Ini ialah kodenya Di Class Barang
-
-<p align="center">
-<img width="935" height="160" alt="image" src="https://github.com/user-attachments/assets/4f9702a7-cd9c-4bad-be4e-6885c8c46fc9" />
-</p>
-
-<p align="center">
-<img width="782" height="107" alt="image" src="https://github.com/user-attachments/assets/4d9ea3e8-6c16-43cc-8025-62f685f6d2f7" />
-</p>
-
 
 
            
@@ -135,6 +126,25 @@ yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada met
 <img width="782" height="107" alt="image" src="https://github.com/user-attachments/assets/4d9ea3e8-6c16-43cc-8025-62f685f6d2f7" />
 </p>
 
+- Dibawah Ini ialah kodenya Di Class Kabel Jaringan
+
+<p align="center">
+<img width="837" height="155" alt="image" src="https://github.com/user-attachments/assets/c1a1152d-9dbc-4c3c-9c1c-fdf5f1b956d4" />
+</p>
+
+<p align="center">
+<img width="1027" height="85" alt="image" src="https://github.com/user-attachments/assets/cab5ea3b-7701-46cd-91ba-a68a4c3c48b5" />
+</p>
+
+- Dibawah Ini ialah kodenya Di Class Perangkat Jaringan
+
+<p align="center">
+<img width="887" height="142" alt="image" src="https://github.com/user-attachments/assets/bc997ebf-0113-4b87-8082-ac49dbe8e946" />
+</p>
+
+<p align="center">
+<img width="1062" height="72" alt="image" src="https://github.com/user-attachments/assets/876241bc-7276-4901-911e-5ac87b516fed" />
+</p>
 
 
 <h3>5.Penjelasan alur program</h3>
