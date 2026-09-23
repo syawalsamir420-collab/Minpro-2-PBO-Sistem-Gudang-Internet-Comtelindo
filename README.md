@@ -38,7 +38,6 @@ Program ini memiliki fitur CRUD (Create, Read, Update, Delete) yang terdiri dari
 semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan modifier protected, bukan public. Artinya, atribut-atribut ini tidak bisa diakses atau diubah sembarangan dari luar class  harus lewat method getter dan setter yang sudah disediakan.
 
 - Kode Encapsulation Di java saya
-
 public class Barang {
 
     protected int id;
