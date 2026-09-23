@@ -10,4 +10,4 @@
 | **NIM** | 2509116079 |
 | **Kelas** | Sistem Informasi 25'B |
 | **Tema** | Gudang Internet  |
-| **Minpro PBO** | 1 |
+| **Minpro PBO** | 2 |
