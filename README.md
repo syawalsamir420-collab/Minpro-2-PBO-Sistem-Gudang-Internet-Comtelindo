@@ -79,8 +79,8 @@ KabelJaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class a
 Dibawah Kode Java Inheritance
 
     Public class KabelJaringan extends Barang }
-    private double panjangMeter;
-    private String jenisKabel;
+        private double panjangMeter;
+        private String jenisKabel;
 
     public KabelJaringan(int id, String namaBarang, String kategori, double harga, int stok,
             double panjangMeter, String jenisKabel) {
@@ -96,20 +96,20 @@ yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada met
 
 Dibawah Kode java Method Overloading
 
-        public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok) {
-        Barang barangBaru = new Barang(nextId, namaBarang, kategori, harga, stok);
+            public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok) {
+                Barang barangBaru = new Barang(nextId, namaBarang, kategori, harga, stok);
         ...
         }
     
-        public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
-        String merek, int garansiBulan) {
-        Barang barangBaru = new PerangkatJaringan(nextId, namaBarang, kategori, harga, stok, merek, garansiBulan);
+            public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
+                String merek, int garansiBulan) {
+                Barang barangBaru = new PerangkatJaringan(nextId, namaBarang, kategori, harga, stok, merek, garansiBulan);
         ...
         }
     
-        public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
-        double panjangMeter, String jenisKabel) {
-        Barang barangBaru = new KabelJaringan(nextId, namaBarang, kategori, harga, stok, panjangMeter, jenisKabel);
+            public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
+                double panjangMeter, String jenisKabel) {
+                Barang barangBaru = new KabelJaringan(nextId, namaBarang, kategori, harga, stok, panjangMeter, jenisKabel);
         ...
         }
 
@@ -122,6 +122,7 @@ Dibawah Kode java Method Overriding
         System.out.println("Nama Barang : " + namaBarang);
         ...
     }
+    
     @Override
     public void tampilkanInfo() {
         System.out.println("--- [KABEL JARINGAN] ---");
