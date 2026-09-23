@@ -33,7 +33,42 @@ Program ini memiliki fitur CRUD (Create, Read, Update, Delete) yang terdiri dari
 - Keluar, digunakan untuk mengakhiri program.
 
 
-<h3>2. Penjelasan alur program</h3>
+<h3>2.Encapsulation</h3>
+
+semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan modifier protected, bukan public. Artinya, atribut-atribut ini tidak bisa diakses atau diubah sembarangan dari luar class  harus lewat method getter dan setter yang sudah disediakan.
+
+- Kode Encapsulation Di java saya
+
+public class Barang {
+    protected int id;
+    protected String namaBarang;
+    protected String kategori;
+    protected double harga;
+    protected int stok;
+
+    public void setHarga(double harga) {
+        if (harga < 0) {
+            throw new IllegalArgumentException("Harga tidak boleh negatif");
+        }
+        this.harga = harga;
+    }
+
+    public void setStok(int stok) {
+        if (stok < 0) {
+            throw new IllegalArgumentException("Stok tidak boleh negatif");
+        }
+        this.stok = stok;
+    }
+
+    public void setNamaBarang(String namaBarang) {
+        if (namaBarang == null || namaBarang.trim().isEmpty()) {
+            throw new IllegalArgumentException("Nama barang tidak boleh kosong");
+        }
+        this.namaBarang = namaBarang;
+    }
+}
+
+<h3>3. Penjelasan alur program</h3>
 
 - Saat program dijalankan, sistem langsung menampilkan Menu Utama yang berisi 6 pilihan: Tambah Barang, Tampilkan Semua Barang, Cari Barang berdasarkan ID, Update Barang, Hapus Barang, dan Keluar. Pengguna tinggal mengetik angka 1 sampai 6 sesuai menu yang mau dipilih.
 
