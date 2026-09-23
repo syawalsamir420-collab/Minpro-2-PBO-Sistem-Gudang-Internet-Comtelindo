@@ -108,7 +108,7 @@ Kalau memilih 6 (Keluar), sistem menampilkan pesan penutup lalu program berhenti
 
 Proses ini terus berulang (looping) kembali ke Menu Utama setiap selesai menjalankan satu menu, sampai pengguna memilih untuk keluar.
 
-<h3>3. DOKUMENTASI PROGRAM</h3>
+<h3>5. DOKUMENTASI PROGRAM</h3>
 
 <h3>A.Menu Gudang Internet Comtelindo</h3>
 
