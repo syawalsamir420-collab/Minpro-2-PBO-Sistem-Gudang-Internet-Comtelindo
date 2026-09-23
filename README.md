@@ -78,11 +78,30 @@ Untuk jenis Perangkat Jaringan, sistem akan meminta dua informasi tambahan di lu
 <img width="571" height="582" alt="image" src="https://github.com/user-attachments/assets/5fb6797d-19c6-4b8a-a955-1ff77090e745" />
 </p>
 
-<h3>.D.Menampilkan Menu Tambah Barang punya panjang & jenis kabeli</h3>
+<h3>D.Menampilkan Menu Tambah Barang punya panjang & jenis kabeli</h3>
+
+Untuk jenis Kabel Jaringan, sistem meminta dua informasi tambahan berupa panjang kabel (dalam meter) dan jenis kabel. Contohnya, barang "Kabel 96 core" dengan kategori Kabel, harga Rp1.000.000, stok 10, panjang 150 meter, dan jenis kabel FO (Fiber Optik) berhasil ditambahkan dengan ID 8. Atribut ini penting untuk membedakan spesifikasi teknis antar jenis kabel, seperti UTP, Fiber Optik, atau jenis lainnya, sehingga memudahkan pencarian kabel sesuai kebutuhan instalasi jaringan.
 
 <p align="center">
 <img width="537" height="597" alt="Cuplikan layar 2026-09-23 192104" src="https://github.com/user-attachments/assets/83610f30-fe9d-4b90-8177-a75bb05aa625" />
 </p>
+
+<h3>E.Tampilkan Semua Barang</h3>
+
+Fitur Tampilkan Semua Barang digunakan untuk menampilkan seluruh daftar barang yang tersimpan di gudang secara lengkap dan terperinci. Setiap barang ditampilkan beserta ID, nama, kategori, harga, dan stoknya, ditambah atribut khusus sesuai jenisnya masing-masing — misalnya barang jenis Kabel Jaringan akan menampilkan informasi panjang dan jenis kabel, sedangkan Perangkat Jaringan menampilkan informasi merek dan lama garansi. Fitur ini memudahkan pengguna untuk melihat kondisi gudang secara menyeluruh dalam satu tampilan, termasuk barang biasa yang hanya menampilkan data standar tanpa atribut tambahan.
+
+<p align="center">
+<img width="571" height="945" alt="Cuplikan layar 2026-09-23 192422" src="https://github.com/user-attachments/assets/5a2e363b-475a-4a1d-85ce-6ed898471ffc" />
+</p>
+
+<h3>F.Cari Barang berdasarkan ID</h3>
+
+Fitur Cari Barang berdasarkan ID memungkinkan pengguna menemukan data barang tertentu dengan cepat cukup dengan memasukkan ID barang yang dicari. Jika barang dengan ID tersebut ditemukan, sistem akan menampilkan seluruh detail informasinya, mulai dari nama, kategori, harga, dan stok, hingga atribut khusus sesuai jenis barangnya. Sebagai contoh, pencarian dengan ID 2 menampilkan data lengkap "Modem ZTE F609" yang termasuk kategori Perangkat Jaringan, lengkap dengan informasi merek dan garansinya. Fitur ini sangat berguna untuk mempercepat proses pengecekan barang tanpa harus menelusuri seluruh daftar barang di gudang.
+
+<p align="center">
+<img width="548" height="600" alt="Cuplikan layar 2026-09-23 192705" src="https://github.com/user-attachments/assets/75afef52-a23d-4175-ba4b-39d7d1f96132" />
+</p>
+
 
 
 
