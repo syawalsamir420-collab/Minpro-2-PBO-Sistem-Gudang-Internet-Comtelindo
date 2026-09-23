@@ -37,7 +37,7 @@ Program ini memiliki fitur CRUD (Create, Read, Update, Delete) yang terdiri dari
 
 semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan modifier protected, bukan public. Artinya, atribut-atribut ini tidak bisa diakses atau diubah sembarangan dari luar class  harus lewat method getter dan setter yang sudah disediakan.
 
-Dibawah Ini ialah kodenya
+- Dibawah Ini ialah kodenya Di Class Barang Java
 
 <p align="center">
 <img width="388" height="140" alt="image" src="https://github.com/user-attachments/assets/fe837fa3-a9ad-427e-af5c-3cf2ee439099" />
@@ -55,6 +55,20 @@ Dibawah Ini ialah kodenya
 <img width="850" height="127" alt="image" src="https://github.com/user-attachments/assets/9d39b308-4b92-4c01-ba8c-4820b89390b4" />
 </p>
 
+- Dibawah Ini ialah kodenya Di Class Kabel Jaringan
+
+<p align="center">
+<img width="967" height="130" alt="image" src="https://github.com/user-attachments/assets/53c58dc5-7250-4143-80c9-7b7b562a2f41" />
+</p>
+
+- Dibawah Ini ialah kodenya Di Class Perangkat Jaringan
+
+<p align="center">
+<img width="851" height="137" alt="image" src="https://github.com/user-attachments/assets/b965f6cc-2e14-40a7-ac9e-4ba63f94282f" />
+</p>
+
+
+
 <h3>3.Inheritance</h3>
 
 Kabel Jaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class anak ini otomatis "mewarisi" semua atribut dan method dari Barang  jadi mereka tidak perlu menulis ulang id, namaBarang, harga, stok, dll, cukup tinggal pakai. Yang mereka lakukan hanyalah menambahkan atribut khusus sesuai kebutuhan masing-masing: KabelJaringan menambahkan panjangMeter dan jenisKabel, sedangkan PerangkatJaringan menambahkan merek dan garansiBulan.
@@ -62,17 +76,7 @@ Kabel Jaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class 
 
 Dibawah Kode Java Inheritance
 
-    Public class KabelJaringan extends Barang }
-        private double panjangMeter;
-        private String jenisKabel;
-
-    public KabelJaringan(int id, String namaBarang, String kategori, double harga, int stok,
-            double panjangMeter, String jenisKabel) {
-        super(id, namaBarang, kategori, harga, stok);
-        setPanjangMeter(panjangMeter);
-        setJenisKabel(jenisKabel);
-        }
-    }
+  
 
 <h3>4.Polymorphism</h3>
 
@@ -80,40 +84,12 @@ yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada met
 
 Dibawah Kode java Method Overloading
 
-            public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok) {
-                Barang barangBaru = new Barang(nextId, namaBarang, kategori, harga, stok);
-        ...
-        }
-    
-            public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
-                String merek, int garansiBulan) {
-                Barang barangBaru = new PerangkatJaringan(nextId, namaBarang, kategori, harga, stok, merek, garansiBulan);
-        ...
-        }
-    
-            public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
-                double panjangMeter, String jenisKabel) {
-                Barang barangBaru = new KabelJaringan(nextId, namaBarang, kategori, harga, stok, panjangMeter, jenisKabel);
-        ...
-        }
-
+           
 <h3>5 .Method Overriding</h3> 
 
 Dibawah Kode java Method Overriding
 
-    public void tampilkanInfo() {
-        System.out.println("ID Barang   : " + id);
-        System.out.println("Nama Barang : " + namaBarang);
-        ...
-    }
-    
-    @Override
-    public void tampilkanInfo() {
-        System.out.println("--- [KABEL JARINGAN] ---");
-        super.tampilkanInfo();
-        System.out.println("Panjang     : " + panjangMeter + " meter");
-        System.out.println("Jenis Kabel : " + jenisKabel);
-    }
+  
 
 <h3>6 .Penjelasan alur program</h3>
 
