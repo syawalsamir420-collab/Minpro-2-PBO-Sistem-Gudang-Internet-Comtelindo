@@ -241,8 +241,3 @@ Fitur Keluar digunakan untuk mengakhiri program dengan aman. Saat pengguna memil
 </p>
 
 
-
-
-
-
-
