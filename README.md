@@ -96,14 +96,36 @@ Kabel Jaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class 
 
 yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada method tambahBarang() di class BarangService, yang ditulis tiga kali dengan nama yang sama namun jumlah dan tipe parameter yang berbeda. Java secara otomatis akan memilih versi method mana yang dijalankan berdasarkan data yang dikirim jika hanya diberikan data dasar (nama, kategori, harga, stok), maka akan dibuat objek Barang biasa; namun jika disertakan merek dan garansiBulan, method akan otomatis membuat objek PerangkatJaringan, begitu juga jika disertakan panjangMeter dan jenisKabel, maka yang dibuat adalah KabelJaringan. Dengan begitu, satu nama method dapat memiliki beberapa perilaku berbeda tergantung konteks pemanggilannya.
 
+<p align="center">
+<img width="1040" height="25" alt="image" src="https://github.com/user-attachments/assets/0ea479ab-d8b8-40ea-9897-52d7f0a56326" />
+</p>
+
+<p align="center">
+<img width="1196" height="46" alt="image" src="https://github.com/user-attachments/assets/a07568d6-9cf7-45aa-b5b6-9cb2dd74b0df" />
+</p>
+
+<p align="center">
+<img width="1022" height="47" alt="image" src="https://github.com/user-attachments/assets/7ba289e7-fff6-4238-bb70-65cce7706b6e" />
+</p>
+
 Dibawah Kode java Method Overloading
+
+- Dibawah Ini ialah kodenya Di Class Barang Service
 
            
 <h3>5 .Method Overriding</h3> 
 
-Dibawah Kode java Method Overriding
+- Dibawah Ini ialah kodenya Di Class Barang
 
-  
+<p align="center">
+<img width="935" height="160" alt="image" src="https://github.com/user-attachments/assets/4f9702a7-cd9c-4bad-be4e-6885c8c46fc9" />
+</p>
+
+<p align="center">
+<img width="782" height="107" alt="image" src="https://github.com/user-attachments/assets/4d9ea3e8-6c16-43cc-8025-62f685f6d2f7" />
+</p>
+
+
 
 <h3>6 .Penjelasan alur program</h3>
 
