@@ -90,7 +90,30 @@ Dibawah Kode Java Inheritance
     }
 }
 
-<h3>4.Penjelasan alur program</h3>
+<h3>4.Polymorphism</h3>
+
+yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada method tambahBarang() di class BarangService, yang ditulis tiga kali dengan nama yang sama namun jumlah dan tipe parameter yang berbeda. Java secara otomatis akan memilih versi method mana yang dijalankan berdasarkan data yang dikirim jika hanya diberikan data dasar (nama, kategori, harga, stok), maka akan dibuat objek Barang biasa; namun jika disertakan merek dan garansiBulan, method akan otomatis membuat objek PerangkatJaringan, begitu juga jika disertakan panjangMeter dan jenisKabel, maka yang dibuat adalah KabelJaringan. Dengan begitu, satu nama method dapat memiliki beberapa perilaku berbeda tergantung konteks pemanggilannya.
+
+- Dibawah KOde java Method Overloading
+
+        public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok) {
+        Barang barangBaru = new Barang(nextId, namaBarang, kategori, harga, stok);
+        ...
+        }
+    
+        public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
+        String merek, int garansiBulan) {
+        Barang barangBaru = new PerangkatJaringan(nextId, namaBarang, kategori, harga, stok, merek, garansiBulan);
+        ...
+        }
+    
+        public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok,
+        double panjangMeter, String jenisKabel) {
+        Barang barangBaru = new KabelJaringan(nextId, namaBarang, kategori, harga, stok, panjangMeter, jenisKabel);
+        ...
+        }
+
+<h3>6 .Penjelasan alur program</h3>
 
 - Saat program dijalankan, sistem langsung menampilkan Menu Utama yang berisi 6 pilihan: Tambah Barang, Tampilkan Semua Barang, Cari Barang berdasarkan ID, Update Barang, Hapus Barang, dan Keluar. Pengguna tinggal mengetik angka 1 sampai 6 sesuai menu yang mau dipilih.
 
@@ -108,7 +131,7 @@ Kalau memilih 6 (Keluar), sistem menampilkan pesan penutup lalu program berhenti
 
 Proses ini terus berulang (looping) kembali ke Menu Utama setiap selesai menjalankan satu menu, sampai pengguna memilih untuk keluar.
 
-<h3>5. DOKUMENTASI PROGRAM</h3>
+<h3>7. DOKUMENTASI PROGRAM</h3>
 
 <h3>A.Menu Gudang Internet Comtelindo</h3>
 
