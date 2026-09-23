@@ -37,7 +37,7 @@ Program ini memiliki fitur CRUD (Create, Read, Update, Delete) yang terdiri dari
 
 - Saat program dijalankan, sistem langsung menampilkan Menu Utama yang berisi 6 pilihan: Tambah Barang, Tampilkan Semua Barang, Cari Barang berdasarkan ID, Update Barang, Hapus Barang, dan Keluar. Pengguna tinggal mengetik angka 1 sampai 6 sesuai menu yang mau dipilih.
 
-- Kalau  memilih 1 (Tambah Barang), sistem akan minta input 3 Kategori Barang yaitu  Barang biasa,Barang nama barang, kategori, harga, dan stok. Setelah semua diisi, data langsung disimpan ke dalam ArrayList dan sistem otomatis kasih ID baru untuk barang tersebut, lalu menampilkan pesan konfirmasi kalau barang berhasil ditambahkan.
+- Kalau  memilih 1 (Tambah Barang), sistem akan minta input 3 Kategori Barang yaitu  Barang biasa,Barang Merek Dan Garansi, Dan Barang Pnajang & merek kabel. nama barang, kategori, harga, dan stok. Setelah semua diisi, data langsung disimpan ke dalam ArrayList dan sistem otomatis kasih ID baru untuk barang tersebut, lalu menampilkan pesan konfirmasi kalau barang berhasil ditambahkan.
 
 - Kalau memilih 2 (Tampilkan Semua Barang), sistem akan menampilkan seluruh data barang yang sudah tersimpan dalam bentuk tabel, lengkap dengan ID, nama, kategori, harga, dan stoknya.
 
