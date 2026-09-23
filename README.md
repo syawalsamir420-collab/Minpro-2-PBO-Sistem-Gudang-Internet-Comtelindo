@@ -59,11 +59,15 @@ Proses ini terus berulang (looping) kembali ke Menu Utama setiap selesai menjala
 Sistem Gudang Internet Comtelindo adalah aplikasi command-line interface (CLI) sederhana yang digunakan untuk mengelola data inventaris barang di gudang internet Comtelindo. Aplikasi ini menyediakan menu interaktif dengan enam pilihan utama: menambahkan barang baru ke dalam sistem, menampilkan seluruh daftar barang yang tersedia, mencari barang berdasarkan ID tertentu, memperbarui data barang yang sudah ada, menghapus barang dari daftar, serta keluar dari program. Dengan antarmuka berbasis teks yang ringan dan mudah digunakan, sistem ini cocok untuk membantu pengelolaan stok barang secara cepat tanpa memerlukan tampilan grafis yang kompleks.
 
 
+<h3>A.Menu Gudang Internet Comtelindo</h3>
 
-<img width="510" height="285" alt="Cuplikan layar 2026-09-23 180721" src="https://github.com/user-attachments/assets/6d61cb86-d863-42ad-b3fb-5a84ed91bdb7"/>
+Sistem Gudang Internet Comtelindo adalah aplikasi command-line interface (CLI) sederhana yang digunakan untuk mengelola data inventaris barang di gudang internet Comtelindo. Aplikasi ini menyediakan menu interaktif dengan enam pilihan utama: menambahkan barang baru ke dalam sistem, menampilkan seluruh daftar barang yang tersedia, mencari barang berdasarkan ID tertentu, memperbarui data barang yang sudah ada, menghapus barang dari daftar, serta keluar dari program. Dengan antarmuka berbasis teks yang ringan dan mudah digunakan, sistem ini cocok untuk membantu pengelolaan stok barang secara cepat tanpa memerlukan tampilan grafis yang kompleks.
 
+<p align="center">
+  <img width="510" height="285" alt="Cuplikan layar 2026-09-23 180721" src="https://github.com/user-attachments/assets/6d61cb86-d863-42ad-b3fb-5a84ed91bdb7" />
+</p>
 
-</h3>B.Menampilkan Menu Tambah Barang</h3>
+<h3>B.Menampilkan Menu Tambah Barang</h3>
 
 
 
