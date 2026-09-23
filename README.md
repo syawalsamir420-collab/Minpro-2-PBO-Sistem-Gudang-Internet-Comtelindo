@@ -68,15 +68,29 @@ semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan mo
 </p>
 
 
-
 <h3>3.Inheritance</h3>
 
 Kabel Jaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class anak ini otomatis "mewarisi" semua atribut dan method dari Barang  jadi mereka tidak perlu menulis ulang id, namaBarang, harga, stok, dll, cukup tinggal pakai. Yang mereka lakukan hanyalah menambahkan atribut khusus sesuai kebutuhan masing-masing: KabelJaringan menambahkan panjangMeter dan jenisKabel, sedangkan PerangkatJaringan menambahkan merek dan garansiBulan.
 
+- Dibawah Ini ialah kodenya Di Class Kabel Jaringan
 
-Dibawah Kode Java Inheritance
+<p align="center">
+<img width="566" height="22" alt="image" src="https://github.com/user-attachments/assets/2f4dab13-f3f0-4342-8f5c-3581a4fbbc8f" />
+</p>
 
-  
+<p align="center">
+<img width="645" height="20" alt="image" src="https://github.com/user-attachments/assets/05f7329d-2c1a-4851-9ca9-d8fe2dd7e913" />
+</p>
+
+- Dibawah Ini ialah kodenya Di Class Perangkat Jaringan
+
+<p align="center">
+<img width="563" height="22" alt="image" src="https://github.com/user-attachments/assets/3e14d846-5b56-4a7e-a7d7-18978fe4c7f2" />
+</p>
+
+<p align="center">
+<img width="596" height="18" alt="image" src="https://github.com/user-attachments/assets/1e6f4185-02b7-4c2b-954d-9668f406b436" />
+</p>
 
 <h3>4.Polymorphism</h3>
 
