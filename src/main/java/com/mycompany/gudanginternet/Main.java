@@ -15,8 +15,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         BarangService service = new BarangService();
 
-        // ===== DUMMY DATA AWAL (wajib minimal 1, di sini 5 data) =====
-        // memanfaatkan overloading tambahBarang() dan inheritance/polymorphism
         service.tambahBarang("Kabel UTP Cat 6", "Kabel", 5000, 200, 100.0, "UTP Cat 6");
         service.tambahBarang("Modem ZTE F609", "Perangkat Jaringan", 350000, 25, "ZTE", 12);
         service.tambahBarang("Router Mikrotik RB750", "Perangkat Jaringan", 620000, 10, "Mikrotik", 24);
@@ -61,7 +59,7 @@ public class Main {
 
     private static void tampilkanMenu() {
         System.out.println("===========================================");
-        System.out.println("   SISTEM GUDANG INTERNET COMTELINDO");
+        System.out.println("   SISTEM GUDANG INTERNET COMTELINDO MEN");
         System.out.println("===========================================");
         System.out.println("1. Tambah Barang");
         System.out.println("2. Tampilkan Semua Barang");

@@ -84,5 +84,5 @@ public class BarangService {
 
     public int getJumlahBarang() {
         return daftarBarang.size();
-    }
+    }  
 }
