@@ -102,6 +102,32 @@ Fitur Cari Barang berdasarkan ID memungkinkan pengguna menemukan data barang ter
 <img width="548" height="600" alt="Cuplikan layar 2026-09-23 192705" src="https://github.com/user-attachments/assets/75afef52-a23d-4175-ba4b-39d7d1f96132" />
 </p>
 
+<h3>G.Update Barang</h3>
+
+Fitur Update Barang digunakan untuk memperbarui data barang yang sudah ada di dalam gudang. Sistem terlebih dahulu menampilkan seluruh daftar barang sebagai referensi, kemudian pengguna diminta memasukkan ID barang yang ingin diperbarui. Setelah itu, sistem menampilkan data barang tersebut saat ini sebagai pembanding, lalu meminta input data baru berupa nama barang, kategori, harga, dan stok. Sebagai contoh, barang dengan ID 3 ("Router Mikrotik RB750") berhasil diperbarui menjadi "Cisco Pocket Tracer" dengan kategori Elektronik, harga Rp1.000.000.000, dan stok 20. Fitur ini memastikan data barang di gudang tetap akurat dan sesuai dengan kondisi terkini.
+
+<p align="center">
+<img width="563" height="848" alt="Cuplikan layar 2026-09-23 193159" src="https://github.com/user-attachments/assets/5431ac13-6135-4a0e-a8c5-d0008f08c9a1" />
+</p>
+
+<h3>G.Update Barang</h3>
+
+Fitur Hapus Barang digunakan untuk menghapus data barang dari gudang yang sudah tidak diperlukan lagi. Sistem terlebih dahulu menampilkan seluruh daftar barang, kemudian pengguna diminta memasukkan ID barang yang ingin dihapus. Sebelum benar-benar menghapus data, sistem akan menampilkan konfirmasi berupa nama barang yang akan dihapus dan meminta persetujuan pengguna (y/n) untuk mencegah penghapusan yang tidak disengaja. Sebagai contoh, barang dengan ID 3 ("Cisco Pocket Tracer") berhasil dihapus setelah pengguna mengonfirmasi dengan menekan "y". Fitur ini memastikan proses penghapusan data dilakukan dengan aman dan terkendali.
+
+<p align="center">
+<img width="660" height="946" alt="Cuplikan layar 2026-09-23 193321" src="https://github.com/user-attachments/assets/39c74a99-9a97-474c-85e4-25981544319f" />
+</p>
+
+<h3>H.Keluar</h3>
+
+Fitur Keluar digunakan untuk mengakhiri program dengan aman. Saat pengguna memilih menu ini, sistem akan menampilkan pesan terima kasih sebagai penutup sebelum program berhenti berjalan. Ini menandakan seluruh siklus penggunaan aplikasi, mulai dari menambah, menampilkan, mencari, memperbarui, hingga menghapus data barang, telah selesai dan pengguna dapat keluar dari sistem kapan saja tanpa kehilangan data yang sudah tersimpan.
+
+<p align="center">
+<img width="690" height="433" alt="Cuplikan layar 2026-09-23 193531" src="https://github.com/user-attachments/assets/5971324b-169c-4112-9c30-634dfcd2a738" />
+</p>
+
+
+
 
 
 
