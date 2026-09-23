@@ -108,12 +108,7 @@ yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada met
 <img width="1022" height="47" alt="image" src="https://github.com/user-attachments/assets/7ba289e7-fff6-4238-bb70-65cce7706b6e" />
 </p>
 
-Dibawah Kode java Method Overloading
-
-- Dibawah Ini ialah kodenya Di Class Barang Service
-
-           
-<h3>5 .Method Overriding</h3> 
+<h3>Method Overloading</h3> 
 
 - Dibawah Ini ialah kodenya Di Class Barang
 
@@ -127,7 +122,22 @@ Dibawah Kode java Method Overloading
 
 
 
-<h3>6 .Penjelasan alur program</h3>
+           
+<h3>6 .Method Overriding</h3> 
+
+- Dibawah Ini ialah kodenya Di Class Barang
+
+<p align="center">
+<img width="935" height="160" alt="image" src="https://github.com/user-attachments/assets/4f9702a7-cd9c-4bad-be4e-6885c8c46fc9" />
+</p>
+
+<p align="center">
+<img width="782" height="107" alt="image" src="https://github.com/user-attachments/assets/4d9ea3e8-6c16-43cc-8025-62f685f6d2f7" />
+</p>
+
+
+
+<h3>7 .Penjelasan alur program</h3>
 
 - Saat program dijalankan, sistem langsung menampilkan Menu Utama yang berisi 6 pilihan: Tambah Barang, Tampilkan Semua Barang, Cari Barang berdasarkan ID, Update Barang, Hapus Barang, dan Keluar. Pengguna tinggal mengetik angka 1 sampai 6 sesuai menu yang mau dipilih.
 
@@ -145,7 +155,7 @@ Kalau memilih 6 (Keluar), sistem menampilkan pesan penutup lalu program berhenti
 
 Proses ini terus berulang (looping) kembali ke Menu Utama setiap selesai menjalankan satu menu, sampai pengguna memilih untuk keluar.
 
-<h3>7. DOKUMENTASI PROGRAM</h3>
+<h3>8. DOKUMENTASI PROGRAM</h3>
 
 <h3>A.Menu Gudang Internet Comtelindo</h3>
 
