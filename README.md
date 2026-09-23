@@ -53,18 +53,36 @@ Proses ini terus berulang (looping) kembali ke Menu Utama setiap selesai menjala
 
 <h3>3. DOKUMENTASI PROGRAM</h3>
 
-</h3>A.Menu Gudang Internet Comtelindo</h3>
-
+<h3>A.Menu Gudang Internet Comtelindo</h3>
 
 Sistem Gudang Internet Comtelindo adalah aplikasi command-line interface (CLI) sederhana yang digunakan untuk mengelola data inventaris barang di gudang internet Comtelindo. Aplikasi ini menyediakan menu interaktif dengan enam pilihan utama: menambahkan barang baru ke dalam sistem, menampilkan seluruh daftar barang yang tersedia, mencari barang berdasarkan ID tertentu, memperbarui data barang yang sudah ada, menghapus barang dari daftar, serta keluar dari program. Dengan antarmuka berbasis teks yang ringan dan mudah digunakan, sistem ini cocok untuk membantu pengelolaan stok barang secara cepat tanpa memerlukan tampilan grafis yang kompleks.
-
 
 <p align="center">
   <img width="510" height="285" alt="Cuplikan layar 2026-09-23 180721" src="https://github.com/user-attachments/assets/6d61cb86-d863-42ad-b3fb-5a84ed91bdb7" />
 </p>
 
-<h3>B.Menampilkan Menu Tambah Barang</h3>
 
+<h3>B.Menampilkan Menu Tambah Barang Biasa</h3>
+
+Fitur Tambah Barang memungkinkan pengguna menambahkan data barang baru ke dalam sistem gudang. Saat memilih menu ini, pengguna akan diminta menentukan jenis barang terlebih dahulu, yaitu Barang Biasa, Perangkat Jaringan (yang memiliki atribut merek dan garansi), atau Kabel Jaringan (yang memiliki atribut panjang dan jenis kabel). Setelah jenis dipilih, sistem akan meminta input berupa nama barang, kategori, harga, dan jumlah stok. Setiap barang yang berhasil ditambahkan akan otomatis diberikan ID unik oleh sistem sebagai penanda identitas barang tersebut di dalam gudang.
+
+<p align="center">
+ <img width="543" height="548" alt="Cuplikan layar 2026-09-23 191503" src="https://github.com/user-attachments/assets/6edf203c-172a-4e30-944f-a64e5da44e88" />
+</p>
+
+<h3>C.Menampilkan Menu Tambah Barang punya merek & garansi</h3>
+
+Untuk jenis Perangkat Jaringan, sistem akan meminta dua informasi tambahan di luar data barang standar, yaitu merek dan masa garansi (dalam bulan). Contohnya, barang bernama "Splicer" dengan kategori Elektronik, harga Rp100.000.000, stok 20 unit, merek "Signal Fire Original", dan garansi 12 bulan berhasil ditambahkan dengan ID 7. Atribut khusus ini membedakan Perangkat Jaringan dari Barang Biasa, karena informasi merek dan garansi penting untuk keperluan klaim atau pelacakan kualitas perangkat jaringan yang digunakan.
+
+<p align="center">
+<img width="571" height="582" alt="image" src="https://github.com/user-attachments/assets/5fb6797d-19c6-4b8a-a955-1ff77090e745" />
+</p>
+
+<h3>.D.Menampilkan Menu Tambah Barang punya panjang & jenis kabeli</h3>
+
+<p align="center">
+<img width="537" height="597" alt="Cuplikan layar 2026-09-23 192104" src="https://github.com/user-attachments/assets/83610f30-fe9d-4b90-8177-a75bb05aa625" />
+</p>
 
 
 
