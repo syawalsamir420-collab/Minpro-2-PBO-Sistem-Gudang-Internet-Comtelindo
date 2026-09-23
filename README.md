@@ -42,12 +42,11 @@ semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan mo
 Dibawah Ini ialah kodenya
 
     Public Class Barang {
-    
-    protected int id;
-    protected String namaBarang;
-    protected String kategori;
-    protected double harga;
-    protected int stok;
+        protected int id;
+        protected String namaBarang;
+        protected String kategori;
+        protected double harga;
+        protected int stok;
 
     public void setHarga(double harga) {
         if (harga < 0) {
@@ -73,7 +72,7 @@ Dibawah Ini ialah kodenya
 
 <h3>3.Inheritance</h3>
 
-KabelJaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class anak ini otomatis "mewarisi" semua atribut dan method dari Barang  jadi mereka tidak perlu menulis ulang id, namaBarang, harga, stok, dll, cukup tinggal pakai. Yang mereka lakukan hanyalah menambahkan atribut khusus sesuai kebutuhan masing-masing: KabelJaringan menambahkan panjangMeter dan jenisKabel, sedangkan PerangkatJaringan menambahkan merek dan garansiBulan.
+Kabel Jaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class anak ini otomatis "mewarisi" semua atribut dan method dari Barang  jadi mereka tidak perlu menulis ulang id, namaBarang, harga, stok, dll, cukup tinggal pakai. Yang mereka lakukan hanyalah menambahkan atribut khusus sesuai kebutuhan masing-masing: KabelJaringan menambahkan panjangMeter dan jenisKabel, sedangkan PerangkatJaringan menambahkan merek dan garansiBulan.
 
 
 Dibawah Kode Java Inheritance
