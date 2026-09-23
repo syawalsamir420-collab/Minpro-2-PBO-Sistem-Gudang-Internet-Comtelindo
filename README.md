@@ -68,8 +68,8 @@ Dibawah Ini ialah kodenya
             throw new IllegalArgumentException("Nama barang tidak boleh kosong");
         }
         this.namaBarang = namaBarang;
+        }
     }
-}
 
 <h3>3.Inheritance</h3>
 
@@ -87,14 +87,14 @@ Dibawah Kode Java Inheritance
         super(id, namaBarang, kategori, harga, stok);
         setPanjangMeter(panjangMeter);
         setJenisKabel(jenisKabel);
+        }
     }
-}
 
 <h3>4.Polymorphism</h3>
 
 yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada method tambahBarang() di class BarangService, yang ditulis tiga kali dengan nama yang sama namun jumlah dan tipe parameter yang berbeda. Java secara otomatis akan memilih versi method mana yang dijalankan berdasarkan data yang dikirim jika hanya diberikan data dasar (nama, kategori, harga, stok), maka akan dibuat objek Barang biasa; namun jika disertakan merek dan garansiBulan, method akan otomatis membuat objek PerangkatJaringan, begitu juga jika disertakan panjangMeter dan jenisKabel, maka yang dibuat adalah KabelJaringan. Dengan begitu, satu nama method dapat memiliki beberapa perilaku berbeda tergantung konteks pemanggilannya.
 
-- Dibawah KOde java Method Overloading
+Dibawah Kode java Method Overloading
 
         public Barang tambahBarang(String namaBarang, String kategori, double harga, int stok) {
         Barang barangBaru = new Barang(nextId, namaBarang, kategori, harga, stok);
@@ -112,6 +112,23 @@ yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada met
         Barang barangBaru = new KabelJaringan(nextId, namaBarang, kategori, harga, stok, panjangMeter, jenisKabel);
         ...
         }
+
+<h3>5 .Method Overriding</h3> 
+
+Dibawah Kode java Method Overriding
+
+    public void tampilkanInfo() {
+        System.out.println("ID Barang   : " + id);
+        System.out.println("Nama Barang : " + namaBarang);
+        ...
+    }
+    @Override
+    public void tampilkanInfo() {
+        System.out.println("--- [KABEL JARINGAN] ---");
+        super.tampilkanInfo();
+        System.out.println("Panjang     : " + panjangMeter + " meter");
+        System.out.println("Jenis Kabel : " + jenisKabel);
+    }
 
 <h3>6 .Penjelasan alur program</h3>
 
