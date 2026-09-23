@@ -39,7 +39,7 @@ semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan mo
 
 - Kode Encapsulation Di java saya
 
-Dibawah Ini Ialah kodenya
+Dibawah Ini ialah kodenya
 
     Public Class Barang {
     
@@ -71,7 +71,26 @@ Dibawah Ini Ialah kodenya
     }
 }
 
-<h3>3. Penjelasan alur program</h3>
+<h3>3.Inheritance</h3>
+
+KabelJaringan extends Barang dan PerangkatJaringan extends Barang. Kedua class anak ini otomatis "mewarisi" semua atribut dan method dari Barang  jadi mereka tidak perlu menulis ulang id, namaBarang, harga, stok, dll, cukup tinggal pakai. Yang mereka lakukan hanyalah menambahkan atribut khusus sesuai kebutuhan masing-masing: KabelJaringan menambahkan panjangMeter dan jenisKabel, sedangkan PerangkatJaringan menambahkan merek dan garansiBulan.
+
+
+Dibawah Kode Java Inheritance
+
+    Public class KabelJaringan extends Barang }
+    private double panjangMeter;
+    private String jenisKabel;
+
+    public KabelJaringan(int id, String namaBarang, String kategori, double harga, int stok,
+            double panjangMeter, String jenisKabel) {
+        super(id, namaBarang, kategori, harga, stok);
+        setPanjangMeter(panjangMeter);
+        setJenisKabel(jenisKabel);
+    }
+}
+
+<h3>4.Penjelasan alur program</h3>
 
 - Saat program dijalankan, sistem langsung menampilkan Menu Utama yang berisi 6 pilihan: Tambah Barang, Tampilkan Semua Barang, Cari Barang berdasarkan ID, Update Barang, Hapus Barang, dan Keluar. Pengguna tinggal mengetik angka 1 sampai 6 sesuai menu yang mau dipilih.
 
