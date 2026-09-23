@@ -40,6 +40,7 @@ semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan mo
 - Kode Encapsulation Di java saya
 
 public class Barang {
+
     protected int id;
     protected String namaBarang;
     protected String kategori;
