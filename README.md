@@ -39,7 +39,7 @@ semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan mo
 
 - Kode Encapsulation Di java saya
 
-
+Dibawah Ini Ialah kodenya
 
     Public Class Barang {
     
