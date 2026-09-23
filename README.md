@@ -39,34 +39,21 @@ semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan mo
 
 Dibawah Ini ialah kodenya
 
-    Public Class Barang {
-        protected int id;
-        protected String namaBarang;
-        protected String kategori;
-        protected double harga;
-        protected int stok;
+<p align="center">
+<img width="388" height="140" alt="image" src="https://github.com/user-attachments/assets/fe837fa3-a9ad-427e-af5c-3cf2ee439099" />
+</p>
 
-    public void setHarga(double harga) {
-        if (harga < 0) {
-            throw new IllegalArgumentException("Harga tidak boleh negatif");
-        }
-        this.harga = harga;
-    }
+<p align="center">
+<img width="907" height="133" alt="image" src="https://github.com/user-attachments/assets/490e9a34-4872-448f-a74b-53151a71ee77" />
+</p>
 
-    public void setStok(int stok) {
-        if (stok < 0) {
-            throw new IllegalArgumentException("Stok tidak boleh negatif");
-        }
-        this.stok = stok;
-    }
+<p align="center">
+<img width="877" height="140" alt="image" src="https://github.com/user-attachments/assets/941652be-4893-426a-9143-a5cf861fd0eb" />
+</p>
 
-    public void setNamaBarang(String namaBarang) {
-        if (namaBarang == null || namaBarang.trim().isEmpty()) {
-            throw new IllegalArgumentException("Nama barang tidak boleh kosong");
-        }
-        this.namaBarang = namaBarang;
-        }
-    }
+<p align="center">
+<img width="850" height="127" alt="image" src="https://github.com/user-attachments/assets/9d39b308-4b92-4c01-ba8c-4820b89390b4" />
+</p>
 
 <h3>3.Inheritance</h3>
 
