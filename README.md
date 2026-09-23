@@ -123,7 +123,7 @@ yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada met
 
 
            
-<h3>6 .Method Overriding</h3> 
+<h3>Method Overriding</h3> 
 
 - Dibawah Ini ialah kodenya Di Class Barang
 
@@ -137,7 +137,7 @@ yaitu overloading dan overriding. Bentuk pertama, overloading, terlihat pada met
 
 
 
-<h3>7 .Penjelasan alur program</h3>
+<h3>5.Penjelasan alur program</h3>
 
 - Saat program dijalankan, sistem langsung menampilkan Menu Utama yang berisi 6 pilihan: Tambah Barang, Tampilkan Semua Barang, Cari Barang berdasarkan ID, Update Barang, Hapus Barang, dan Keluar. Pengguna tinggal mengetik angka 1 sampai 6 sesuai menu yang mau dipilih.
 
@@ -155,7 +155,7 @@ Kalau memilih 6 (Keluar), sistem menampilkan pesan penutup lalu program berhenti
 
 Proses ini terus berulang (looping) kembali ke Menu Utama setiap selesai menjalankan satu menu, sampai pengguna memilih untuk keluar.
 
-<h3>8. DOKUMENTASI PROGRAM</h3>
+<h3>6. DOKUMENTASI PROGRAM</h3>
 
 <h3>A.Menu Gudang Internet Comtelindo</h3>
 
