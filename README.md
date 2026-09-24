@@ -44,6 +44,10 @@ semua atribut seperti id, namaBarang, kategori, harga, dan stok dibuat dengan mo
 </p>
 
 <p align="center">
+<img width="425" height="93" alt="image" src="https://github.com/user-attachments/assets/9f8ffa82-04d4-46b7-b883-5bec63526305" />
+</p>
+
+<p align="center">
 <img width="907" height="133" alt="image" src="https://github.com/user-attachments/assets/490e9a34-4872-448f-a74b-53151a71ee77" />
 </p>
 
